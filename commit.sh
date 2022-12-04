@@ -17,6 +17,6 @@ commitMsg=$(find ${PWD} -iname "*.py" -exec bash -c "cat {}" \; | grep "[가-힣
 ${GIT} add -A
 ${GIT} status
 ${GIT} commit -m "'${commitMsg}'"
-${GIT} push -u origin main
+${GIT} push -u origin main 1>/dev/null 2>./commit_err.log
 
 echo "${status} Commit Done"
