@@ -25,7 +25,7 @@ echo ${commitMsg}
 ${GIT} add -A
 ${GIT} status
 ${GIT} commit -m "'${commitMsg}'"
-${GIT} push -u origin maie
+${GIT} push -u origin main
 echo "${stat} Commit Done"
 done
 
