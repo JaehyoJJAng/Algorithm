@@ -11,9 +11,9 @@ do
     continue
   fi
 
-if [[ ! -e ${status} ]]
+if [[ ! -e ${stat} ]]
 then
-  echo "${status} File not Found"
+  echo "${stat} File not Found"
   exit 1
 fi
 
