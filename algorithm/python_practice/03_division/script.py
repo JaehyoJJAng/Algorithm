@@ -1,4 +1,5 @@
 import sys
+# 두 수의 나눗셈
 
 def validation_check(obj,type):
     if isinstance(obj,type):
