@@ -19,13 +19,12 @@ fi
 
 # Get Commit Message
 commitMsg=$(find ${stat} -iname "*.py" -exec bash -c "cat {}" \; | head -n 3 | grep "[가-힣ㄱ-ㅎ]")
-echo ${commitMsg}
 
 # Git Commit
 ${GIT} add -A
 ${GIT} status
 ${GIT} commit -m "'${commitMsg}'"
-${GIT} push -u origin main
-echo "${stat} Commit Done"
 done
 
+${GIT} push -u origin main
+echo "${stat} Commit Done"
