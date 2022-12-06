@@ -1,18 +1,17 @@
-# 배열 원소의 길이 
+# 아이스 아메리카노 
 
-<p
-문자열 배열 strlist가 매개변수로 주어집니다. strlist 각 원소의 길이를 담은 배열을 retrun하도록 solution 함수를 완성해주세요.>
+<p>
+머쓱이는 추운 날에도 아이스 아메리카노만 마십니다. 아이스 아메리카노는 한잔에 5,500원입니다. 머쓱이가 가지고 있는 돈 money가 매개변수로 주어질 때, 머쓱이가 최대로 마실 수 있는 아메리카노의 잔 수와 남는 돈을 순서대로 담은 배열을 return 하도록 solution 함수를 완성해보세요.
 </p>
 
 ```
 <제한 사항>
-1 ≤ strlist 원소의 길이 ≤ 100
-strlist는 알파벳 소문자, 대문자, 특수문자로 구성되어 있습니다.
+0 < money ≤ 1,000,000
 
 === 입출력 예 ===
-strlist				result
-["We", "are", "the", "world!"]	[2, 3, 3, 6]
-["I", "Love", "Programmers."]	[1, 4, 12]
+money	result
+5,500	[1, 0]
+15,000	[2, 4000]
 ```
 
 <p>입출력 예 설명</p>
@@ -20,10 +19,10 @@ strlist				result
 ```
 입출력 예 #1
 
-["We", "are", "the", "world!"]의 각 원소의 길이인 [2, 3, 3, 6]을 return합니다.
+5,500원은 아이스 아메리카노 한 잔을 살 수 있고 잔돈은 0원입니다.
 입출력 예 #2
 
-["I", "Love", "Programmers."]의 각 원소의 길이인 [1, 4, 12]을 return합니다.
+15,000원은 아이스 아메리카노 두 잔을 살 수 있고 잔돈은 4,000원입니다.
 ```
 
 <strong> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&languages=python3</strong>
