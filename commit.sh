@@ -27,4 +27,8 @@ ${GIT} commit -m "'${commitMsg}'"
 done
 
 ${GIT} push -u origin main
+
+# Commit History Print
+${GIT} log --pretty=oneline | head -n 5
+
 echo "${stat} Commit Done"
