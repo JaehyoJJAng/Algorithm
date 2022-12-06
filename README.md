@@ -1,17 +1,18 @@
-# 문자열 뒤집기 
+# 최댓값 만들기 (1)
 
 <p>
-문자열 my_string이 매개변수로 주어집니다. my_string을 거꾸로 뒤집은 문자열을 return하도록 solution 함수를 완성해주세요.
+정수 배열 numbers가 매개변수로 주어집니다. numbers의 원소 중 두 개를 곱해 만들 수 있는 최댓값을 return하도록 solution 함수를 완성해주세요.
 </p>
 
 ```
 <제한 사항>
-1 ≤ my_string의 길이 ≤ 1,000
+0 ≤ numbers의 원소 ≤ 10,000
+2 ≤ numbers의 길이 ≤ 100
 
 === 입출력 예 ===
-my_string	return
-"jaron"		"noraj"
-"bread"		"daerb"
+numbers			result
+[1, 2, 3, 4, 5]		20
+[0, 31, 24, 10, 1, 9]	744
 ```
 
 <p>입출력 예 설명</p>
@@ -19,10 +20,10 @@ my_string	return
 ```
 입출력 예 #1
 
-my_string이 "jaron"이므로 거꾸로 뒤집은 "noraj"를 return합니다.
-입출력 예 #2
+두 수의 곱중 최댓값은 4 * 5 = 20 입니다.
+입출력 예 #1
 
-my_string이 "bread"이므로 거꾸로 뒤집은 "daerb"를 return합니다.
+두 수의 곱중 최댓값은 31 * 24 = 744 입니다.
 ```
 
 <strong> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&languages=python3</strong>
