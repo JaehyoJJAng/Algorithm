@@ -1,20 +1,20 @@
-# 배열 자르기
-
+# 특정 문자 제거하기
  
 <p>
-정수 배열 numbers와 정수 num1, num2가 매개변수로 주어질 때, numbers의 num1번 째 인덱스부터 num2번째 인덱스까지 자른 정수 배열을 return 하도록solution 함수를 완성해보세요.
+문자열 my_string과 문자 letter이 매개변수로 주어집니다. my_string에서 letter를 제거한 문자열을 return하도록 solution 함수를 완성해주세요.
 </p>
 
 ```
 <제한 사항>
-2 ≤ numbers의 길이 ≤ 30
-0 ≤ numbers의 원소 ≤ 1,000
-0 ≤num1 < num2 < numbers의 길이
+1 ≤ my_string의 길이 ≤ 100
+letter은 길이가 1인 영문자입니다.
+my_string과 letter은 알파벳 대소문자로 이루어져 있습니다.
+대문자와 소문자를 구분합니다.
 
 === 입출력 예 ===
-numbers			num1		num2	result
-[1, 2, 3, 4, 5]		1		3	[2, 3, 4]
-[1, 3, 5]		1		2	[3, 5]
+my_string	letter	result
+"abcdef"	"f"	"abcde"
+"BCBdbe"	"B"	"Cdbe"
 ```
 
 <p>입출력 예 설명</p>
@@ -22,10 +22,10 @@ numbers			num1		num2	result
 ```
 입출력 예 #1
 
-[1, 2, 3, 4, 5]의 1번째 인덱스 2부터 3번째 인덱스 4 까지 자른 [2, 3, 4]를 return 합니다.
+"abcdef" 에서 "f"를 제거한 "abcde"를 return합니다.
 입출력 예 #2
 
-[1, 3, 5]의 1번째 인덱스 3부터 2번째 인덱스 5까지 자른 [3, 5]를 return 합니다.
+"BCBdbe" 에서 "B"를 모두 제거한 "Cdbe"를 return합니다.
 ```
 
 <strong> 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&languages=python3</strong>
