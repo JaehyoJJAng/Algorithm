@@ -1,33 +1,33 @@
-# 문자열 정렬하기 (1) 
+# n의 배수 고르기 
 
 <p>
-문자열 my_string이 매개변수로 주어질 때, my_string 안에 있는 숫자만 골라 오름차순 정렬한 리스트를 return 하도록 solution 함수를 작성해보세요.
+정수 n과 정수 배열 numlist가 매개변수로 주어질 때, numlist에서 n의 배수가 아닌 수들을 제거한 배열을 return하도록 solution 함수를 완성해주세요.
 </p>
 
 ```
 <제한 사항>
-1 ≤ my_string의 길이 ≤ 100
-my_string에는 숫자가 한 개 이상 포함되어 있습니다.
-my_string은 영어 소문자 또는 0부터 9까지의 숫자로 이루어져 있습니다. - - -
+1 ≤ n ≤ 10,000
+1 ≤ numlist의 크기 ≤ 100
+1 ≤ numlist의 원소 ≤ 100,000
 
 === 입출력 예 ===
-my_string	    result
-"hi12392"	    [1, 2, 2, 3, 9]
-"p2o4i8gj2"	  [2, 2, 4, 8]
-"abcde0"	    [0]
+n	numlist	                        result
+3	[4, 5, 6, 7, 8, 9, 10, 11, 12]	[6, 9, 12]
+5	[1, 9, 3, 10, 13, 5]	          [10, 5]
+12	[2, 100, 120, 600, 12, 12]	  [120, 600, 12, 12]
 ```
 
 <p>입출력 예 설명</p>
 
 ```
 입출력 예 #1
-"hi12392"에 있는 숫자 1, 2, 3, 9, 2를 오름차순 정렬한 [1, 2, 2, 3, 9]를 return 합니다.
+numlist에서 3의 배수만을 남긴 [6, 9, 12]를 return합니다.
 
 입출력 예 #2
-"p2o4i8gj2"에 있는 숫자 2, 4, 8, 2를 오름차순 정렬한 [2, 2, 4, 8]을 return 합니다.
+numlist에서 5의 배수만을 남긴 [10, 5]를 return합니다.
 
 입출력 예 #3
-"abcde0"에 있는 숫자 0을 오름차순 정렬한 [0]을 return 합니다.
+numlist에서 12의 배수만을 남긴 [120, 600, 12, 12]를 return합니다.
 ```
 
 <a href="https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&languages=python">출처: 프로그래머스 코딩 테스트 연습</a>
