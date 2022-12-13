@@ -1,29 +1,29 @@
-# 모음 제거 
+# 가위 바위 보 
 
 <p>
-영어에선 a, e, i, o, u 다섯 가지 알파벳을 모음으로 분류합니다. 문자열 my_string이 매개변수로 주어질 때 모음을 제거한 문자열을 return하도록 solution 함수를 완성해주세요.
+가위는 2 바위는 0 보는 5로 표현합니다. 가위 바위 보를 내는 순서대로 나타낸 문자열 rsp가 매개변수로 주어질 때, rsp에 저장된 가위 바위 보를 모두 이기는 경우를 순서대로 나타낸 문자열을 return하도록 solution 함수를 완성해보세요.
 </p>
 
 ```
 <제한 사항>
-my_string은 소문자와 공백으로 이루어져 있습니다.
-1 ≤ my_string의 길이 ≤ 1,000
+0 < rsp의 길이 ≤ 100
+rsp와 길이가 같은 문자열을 return 합니다.
+rsp는 숫자 0, 2, 5로 이루어져 있습니다.
 
 === 입출력 예 ===
-my_string	          result
-"bus"	              "bs"
-"nice to meet you"	"nc t mt y"
+rsp	    result
+"2"	    "0"
+"205"	  "052"
 ```
 
 <p>입출력 예 설명</p>
 
 ```
 입출력 예 #1
+"2"는 가위이므로 바위를 나타내는 "0"을 return 합니다.
 
-"bus"에서 모음 u를 제거한 "bs"를 return합니다.
-입출력 예 #1
-
-"nice to meet you"에서 모음 i, o, e, u를 모두 제거한 "nc t mt y"를 return합니다.
+입출력 예 #2
+"205"는 순서대로 가위, 바위, 보이고 이를 모두 이기려면 바위, 보, 가위를 순서대로 내야하므로 “052”를 return합니다.
 ```
 
 <a href="https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&languages=python">출처: 프로그래머스 코딩 테스트 연습</a>
