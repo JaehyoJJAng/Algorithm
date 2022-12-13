@@ -1,29 +1,29 @@
-# 세균 증식 
+# 대문자와 소문자 
 
 <p>
-어떤 세균은 1시간에 두배만큼 증식한다고 합니다. 처음 세균의 마리수 n과 경과한 시간 t가 매개변수로 주어질 때 t시간 후 세균의 수를 return하도록 solution 함수를 완성해주세요.
+문자열 my_string이 매개변수로 주어질 때, 대문자는 소문자로 소문자는 대문자로 변환한 문자열을 return하도록 solution 함수를 완성해주세요.
 </p>
 
 ```
 <제한 사항>
-1 ≤ n ≤ 10
-1 ≤ t ≤ 15
+1 ≤ my_string의 길이 ≤ 1,000
+my_string은 영어 대문자와 소문자로만 구성되어 있습니다.
 
 
 === 입출력 예 ===
-n	t	result
-2	10	2048
-7	15	229,376
+my_string	    result
+"cccCCC"	    "CCCccc"
+"abCdEfghIJ"	"ABcDeFGHij"
 ```
 
 <p>입출력 예 설명</p>
 
 ```
 입출력 예 #1
-처음엔 2마리, 1시간 후엔 4마리, 2시간 후엔 8마리, ..., 10시간 후엔 2048마리가 됩니다. 따라서 2048을 return합니다.
+소문자는 대문자로 대문자는 소문자로 바꾼 "CCCccc"를 return합니다.
 
 입출력 예 #2
-처음엔 7마리, 1시간 후엔 14마리, 2시간 후엔 28마리, ..., 15시간 후엔 229376마리가 됩니다. 따라서 229,376을 return합니다.
+소문자는 대문자로 대문자는 소문자로 바꾼 "ABcDeFGHij"를 return합니다.
 ```
 
 <a href="https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc&languages=python">출처: 프로그래머스 코딩 테스트 연습</a>
