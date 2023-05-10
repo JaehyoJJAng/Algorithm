@@ -1,2 +1,2 @@
 n : int = int(input())
-print(f"{'*' * n}")
+[print('*' * i) for i in range(1, n + 1)]
